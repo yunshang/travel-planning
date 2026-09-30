@@ -1,0 +1,2730 @@
+{
+  "trip": {
+    "title": "湖南秋日奇观之旅：长沙与张家界4日经典行",
+    "subtitle": "橘洲慢步、阿凡达仙峰与天门绝壁（4天3晚紧凑高效版）",
+    "destination": "湖南（长沙、张家界）",
+    "date_range": "2026-10-03 — 2026-10-06",
+    "travelers": "1 位成人",
+    "budget": "5000 元（实际核算约 3500 元）",
+    "updated_at": "2026-09-28",
+    "assumptions": [
+      "单人独行，国庆假期出行，优先保障核心景区早进园与无缝交通接驳",
+      "D1晚（10.03）入住武陵源吴家峪标志门旁知名青旅天鹅之旅国际青年旅舍（独卫舒适大床房），步行仅5分钟直达景区东门",
+      "D2晚及D3晚（10.04-10.06）连住张家界市区天门山索道下站旁知名民宿指南针客栈（独卫大床房），步行仅6分钟达索道站",
+      "10.06当晚搭乘直达复兴号G221返杭，留出10.07整整一天在杭休整，10.08从容上班"
+    ]
+  },
+  "workflow": {
+    "phase": "confirmed_planning",
+    "selected_route_id": "route-b-compact-4d3n",
+    "confirmed_at": "2026-09-28T18:45:00+08:00",
+    "pending_confirmations": [
+      "天门山A线/B线索道分时预约通道",
+      "国庆期间橘子洲小火车早班预约"
+    ]
+  },
+  "sources": [
+    {
+      "id": "source-amap",
+      "title": "高德地图与路线导航服务",
+      "url": "https://lbs.amap.com/api/webservice/guide/api/direction",
+      "kind": "map",
+      "provider": "amap",
+      "provider_poi_ids": [
+        "B001704165",
+        "B001783301",
+        "B0GD119283",
+        "B0FFGDX001",
+        "B0FFL19001",
+        "B0FFL19002"
+      ],
+      "checked_at": "2026-09-28",
+      "note": "提供POI坐标、导航耗时及路线核验"
+    },
+    {
+      "id": "source-amap-platform",
+      "title": "高德商家与餐饮服务平台",
+      "url": "https://ditu.amap.com/",
+      "kind": "restaurant_platform",
+      "provider": "amap",
+      "provider_poi_ids": [
+        "B001704165",
+        "B001783301",
+        "B0GD119283",
+        "B0FFGDX001",
+        "B0FFL19001",
+        "B0FFL19002"
+      ],
+      "checked_at": "2026-09-28",
+      "note": "提供商家营业状态、评分与门牌地址核验"
+    }
+  ],
+  "planning": {
+    "restaurant_research_version": 3,
+    "intercity_options": [
+      {
+        "id": "train-hgh-cwq-g205",
+        "from": "杭州东站",
+        "to": "长沙南站",
+        "departure": {
+          "station": "杭州东",
+          "station_code": "HGH",
+          "datetime": "07:47"
+        },
+        "arrival": {
+          "station": "长沙南",
+          "station_code": "CWQ",
+          "datetime": "11:00"
+        },
+        "operational": {
+          "seat_class": "二等座",
+          "duration_minutes": 193,
+          "transport_no": "G205"
+        },
+        "cost": "¥485",
+        "action_links": [
+          {
+            "type": "train",
+            "label": "在 12306 查看 G205 详情与购票",
+            "provider": "12306",
+            "url": "https://www.12306.cn/index/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "国庆长假需提前通过 12306 候补抢票"
+          }
+        ]
+      },
+      {
+        "id": "train-cs-jxa-g4166",
+        "from": "长沙站",
+        "to": "张家界西站",
+        "departure": {
+          "station": "长沙站",
+          "station_code": "CSQ",
+          "datetime": "19:00"
+        },
+        "arrival": {
+          "station": "张家界西",
+          "station_code": "JXA",
+          "datetime": "20:50"
+        },
+        "operational": {
+          "seat_class": "二等座",
+          "duration_minutes": 110,
+          "transport_no": "城际高铁 G4166/C72"
+        },
+        "cost": "¥166",
+        "action_links": [
+          {
+            "type": "train",
+            "label": "在 12306 查看长张城际高铁详情",
+            "provider": "12306",
+            "url": "https://www.12306.cn/index/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "车次密集，推荐提前15天锁票"
+          }
+        ]
+      },
+      {
+        "id": "train-jxa-hgh-g221",
+        "from": "张家界西站",
+        "to": "杭州东站",
+        "departure": {
+          "station": "张家界西",
+          "station_code": "JXA",
+          "datetime": "14:39"
+        },
+        "arrival": {
+          "station": "杭州东",
+          "station_code": "HGH",
+          "datetime": "21:09"
+        },
+        "operational": {
+          "seat_class": "二等座",
+          "duration_minutes": 390,
+          "transport_no": "G221"
+        },
+        "cost": "¥771",
+        "action_links": [
+          {
+            "type": "train",
+            "label": "在 12306 查看 G221 直达高铁详情",
+            "provider": "12306",
+            "url": "https://www.12306.cn/index/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "一站直达免换乘，国庆返程关键车次"
+          }
+        ]
+      }
+    ],
+    "transport_edges": [
+      {
+        "id": "edge-cs-station-jzz",
+        "mode": "bus",
+        "from": "长沙南站",
+        "to": "橘子洲景区",
+        "route": "地铁2号线直达（约30分钟）",
+        "door_to_door_duration": "约 35 分钟",
+        "cost": "地铁票 ¥4",
+        "reason": "地铁2号线直达橘子洲站地心核心区，避开过江大桥节假日地面拥堵",
+        "fallback": "打车约 ¥35",
+        "map_route": {
+          "mode": "bus",
+          "origin": "113.064560,28.145880",
+          "destination": "112.960228,28.196324"
+        },
+        "action_links": [
+          {
+            "type": "map",
+            "label": "查看长沙南站至橘子洲地铁导航",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/navigation?from=113.064560,28.145880,长沙南站&to=112.960228,28.196324,橘子洲&mode=bus&src=travel-planning",
+            "checked_at": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "id": "edge-jzz-taiping",
+        "mode": "bus",
+        "from": "橘子洲景区",
+        "to": "太平老街 / 五一广场",
+        "route": "地铁2号线（1站即达）",
+        "door_to_door_duration": "约 15 分钟",
+        "cost": "地铁票 ¥2",
+        "reason": "橘子洲过江到湘江中路站或五一广场站仅1站，快捷无缝",
+        "fallback": "步行过橘子洲大桥",
+        "map_route": {
+          "mode": "bus",
+          "origin": "112.960228,28.196324",
+          "destination": "112.971285,28.195240"
+        },
+        "action_links": [
+          {
+            "type": "map",
+            "label": "查看橘子洲至太平老街地铁导航",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/navigation?from=112.960228,28.196324,橘子洲&to=112.971285,28.195240,太平老街&mode=bus&src=travel-planning",
+            "checked_at": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "id": "edge-taiping-cs-station",
+        "mode": "bus",
+        "from": "太平老街",
+        "to": "长沙火车站",
+        "route": "地铁2号线（4站约10分钟）",
+        "door_to_door_duration": "约 20 分钟",
+        "cost": "地铁票 ¥3",
+        "reason": "直通长沙火车站普速/城际场站，无缝衔接晚间城际高铁",
+        "fallback": "打车约 ¥18",
+        "map_route": {
+          "mode": "bus",
+          "origin": "112.971285,28.195240",
+          "destination": "113.011885,28.194510"
+        },
+        "action_links": [
+          {
+            "type": "map",
+            "label": "查看太平街至长沙站地铁导航",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/navigation?from=112.971285,28.195240,太平街&to=113.011885,28.194510,长沙站&mode=bus&src=travel-planning",
+            "checked_at": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "id": "edge-zjj-west-wly",
+        "mode": "car",
+        "from": "张家界西站",
+        "to": "天鹅之旅国际青年旅舍(武陵源森林公园标志门店)",
+        "route": "西站客运专线大巴或正规打车",
+        "door_to_door_duration": "约 35 分钟",
+        "cost": "客运大巴 ¥13 / 打车约 ¥65",
+        "reason": "出站口右侧即是客运分流中心，流水发车直达武陵源吴家峪区域",
+        "fallback": "网约车直达",
+        "map_route": {
+          "mode": "car",
+          "origin": "110.448560,29.167240",
+          "destination": "110.539015,29.352884"
+        },
+        "action_links": [
+          {
+            "type": "map",
+            "label": "查看张家界西站至天鹅之旅青年旅舍公路导航",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/navigation?from=110.448560,29.167240,张家界西站&to=110.539015,29.352884,天鹅之旅青年旅舍&mode=car&src=travel-planning",
+            "checked_at": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "id": "edge-wly-zjj-city",
+        "mode": "car",
+        "from": "武陵源吴家峪标志门",
+        "to": "张家界指南针客栈(天门山索道店)",
+        "route": "武陵源汽车站至市区专线客车或打车",
+        "door_to_door_duration": "约 45 分钟",
+        "cost": "专线班车 ¥12 / 打车约 ¥70",
+        "reason": "班线每15分钟一班，直达市区索道站附近，下车步行几分钟即达指南针客栈",
+        "fallback": "滴滴顺风车/拼车约 ¥30",
+        "map_route": {
+          "mode": "car",
+          "origin": "110.535785,29.351095",
+          "destination": "110.483299,29.110234"
+        },
+        "action_links": [
+          {
+            "type": "map",
+            "label": "查看武陵源至张家界指南针客栈导航",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/navigation?from=110.535785,29.351095,武陵源标志门&to=110.483317,29.110084,指南针客栈&mode=car&src=travel-planning",
+            "checked_at": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "id": "edge-zjj-city-west",
+        "mode": "car",
+        "from": "张家界指南针客栈(天门山索道店)",
+        "to": "张家界西站",
+        "route": "市区打车直达",
+        "door_to_door_duration": "约 20 分钟",
+        "cost": "打车约 ¥25~30",
+        "reason": "路况通畅无红绿灯延误，留足进站安检时间",
+        "fallback": "公交6路或17路直达（约45分钟）",
+        "map_route": {
+          "mode": "car",
+          "origin": "110.483299,29.110234",
+          "destination": "110.448560,29.167240"
+        },
+        "action_links": [
+          {
+            "type": "map",
+            "label": "查看指南针客栈至张家界西站打车导航",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/navigation?from=110.483317,29.110084,指南针客栈&to=110.448560,29.167240,张家界西站&mode=car&src=travel-planning",
+            "checked_at": "2026-09-28"
+          }
+        ]
+      }
+    ],
+    "lodging_options": [
+      {
+        "id": "hotel-wly-tianezhilv",
+        "name": "天鹅之旅国际青年旅舍(武陵源森林公园标志门店)",
+        "room_type": "独立卫浴舒适大床房（单人独享）",
+        "check_in": "2026-10-03",
+        "check_out": "2026-10-04",
+        "nights": 1,
+        "price_per_night": 180,
+        "total_cost": 180,
+        "location": {
+          "physical_address": "湖南省张家界市武陵源区军邸路吴家峪口客栈小区45号",
+          "coordinates": "110.539015,29.352884",
+          "coordinate_system": "GCJ-02"
+        },
+        "features": [
+          "距吴家峪门票站（标志门东门）仅约 380 米，步行 5 分钟直达进园检票口",
+          "国际青旅口碑名店，Agoda 9.4分超高好评，氛围友好，提供全套洗漱设施与武陵源徒步建议",
+          "独立卫浴、冷暖空调、24小时充沛热水，支持全天免费行李寄存"
+        ],
+        "action_links": [
+          {
+            "type": "hotel",
+            "label": "在飞猪查看天鹅之旅青年旅舍",
+            "provider": "飞猪旅行",
+            "url": "https://www.fliggy.com/",
+            "checked_at": "2026-09-30"
+          }
+        ]
+      },
+      {
+        "id": "hotel-zjj-zhinanzhen",
+        "name": "张家界指南针精品客栈(天门山索道店)",
+        "room_type": "独立卫浴温馨大床房（单人独享）",
+        "check_in": "2026-10-04",
+        "check_out": "2026-10-06",
+        "nights": 2,
+        "price_per_night": 160,
+        "total_cost": 320,
+        "location": {
+          "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+          "coordinates": "110.483299,29.110234",
+          "coordinate_system": "GCJ-02"
+        },
+        "features": [
+          "距天门山索道下站仅约 400 米，早晨步行 5 分钟抢乘首班索道免早起奔波",
+          "高德评分 4.6 分老牌高口碑客栈，掌柜手绘天门山避坑路线图，提供早起排队与游览建议",
+          "退房后支持全天免费寄存行李，周边老字号餐饮林立（富正毅三下锅步行4分钟，钵钵菜步行2分钟）"
+        ],
+        "action_links": [
+          {
+            "type": "hotel",
+            "label": "在飞猪查看指南针客栈",
+            "provider": "飞猪旅行",
+            "url": "https://www.fliggy.com/",
+            "checked_at": "2026-09-30"
+          }
+        ]
+      }
+    ],
+    "restaurants": [
+      {
+        "id": "rest-cs-benluobo",
+        "name": "笨萝卜浏阳菜馆(五一广场店)",
+        "cuisine": [
+          "地道湘菜",
+          "浏阳蒸菜"
+        ],
+        "location": {
+          "physical_address": "湖南省长沙市天心区黄兴南路440号",
+          "coordinates": "112.973210,28.192540",
+          "coordinate_system": "GCJ-02",
+          "poi_id": "B001704165",
+          "poi_provider": "amap",
+          "poi_source_id": "source-amap-platform",
+          "poi_verified_at": "2026-09-28"
+        },
+        "signature_dishes": [
+          "醋蒸鸡",
+          "酸菜炒肥肠",
+          "油渣炒青椒"
+        ],
+        "media": [
+          {
+            "kind": "link_preview",
+            "source_url": "https://ditu.amap.com/",
+            "alt": "查看笨萝卜浏阳菜馆官方实景与相册",
+            "source_label": "高德地图"
+          }
+        ],
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "在高德查看笨萝卜浏阳菜馆",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=112.973210,28.192540&name=笨萝卜浏阳菜馆&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "id": "rest-cs-feidachu",
+        "name": "费大厨辣椒炒肉(五一广场平和堂店)",
+        "cuisine": [
+          "经典湘菜"
+        ],
+        "location": {
+          "physical_address": "湖南省长沙市芙蓉区黄兴中路88号平和堂7楼",
+          "coordinates": "112.977210,28.194210",
+          "coordinate_system": "GCJ-02",
+          "poi_id": "B001783301",
+          "poi_provider": "amap",
+          "poi_source_id": "source-amap-platform",
+          "poi_verified_at": "2026-09-28"
+        },
+        "signature_dishes": [
+          "费大厨辣椒炒肉",
+          "香芋排骨",
+          "皮蛋青椒擂茄子"
+        ],
+        "media": [
+          {
+            "kind": "link_preview",
+            "source_url": "https://ditu.amap.com/",
+            "alt": "查看费大厨辣椒炒肉相册",
+            "source_label": "高德地图"
+          }
+        ],
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "在高德查看费大厨辣椒炒肉",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=112.977210,28.194210&name=费大厨辣椒炒肉&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "id": "rest-zjj-fuzhengyi",
+        "name": "富正毅三下锅(索道公司店)",
+        "cuisine": [
+          "张家界老字号三下锅"
+        ],
+        "location": {
+          "physical_address": "湖南省张家界市永定区官黎坪办事处官黎坪居委会六组",
+          "coordinates": "110.481318,29.111375",
+          "coordinate_system": "GCJ-02",
+          "poi_id": "B0FFL19001",
+          "poi_provider": "amap",
+          "poi_source_id": "source-amap-platform",
+          "poi_verified_at": "2026-09-28"
+        },
+        "signature_dishes": [
+          "核桃肉干锅",
+          "酸萝卜炒肥肠",
+          "黄金豆腐"
+        ],
+        "media": [
+          {
+            "kind": "link_preview",
+            "source_url": "https://ditu.amap.com/",
+            "alt": "查看富正毅三下锅相册",
+            "source_label": "高德地图"
+          }
+        ],
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "在高德查看富正毅三下锅(索道公司店)",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=110.481318,29.111375&name=富正毅三下锅&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "id": "rest-zjj-bobo-city",
+        "name": "寨子里的钵钵菜(天门山索道店)",
+        "cuisine": [
+          "湘西菜",
+          "常德钵子菜"
+        ],
+        "location": {
+          "physical_address": "湖南省张家界市永定区南城金座东门西北70米",
+          "coordinates": "110.484889,29.110318",
+          "coordinate_system": "GCJ-02",
+          "poi_id": "B0FFL19002",
+          "poi_provider": "amap",
+          "poi_source_id": "source-amap-platform",
+          "poi_verified_at": "2026-09-28"
+        },
+        "signature_dishes": [
+          "土家腊肉",
+          "擂辣椒皮蛋",
+          "牛腩炖萝卜"
+        ],
+        "media": [
+          {
+            "kind": "link_preview",
+            "source_url": "https://ditu.amap.com/",
+            "alt": "查看寨子里的钵钵菜(索道店)相册",
+            "source_label": "高德地图"
+          }
+        ],
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "在高德查看寨子里的钵钵菜(天门山索道店)",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=110.484889,29.110318&name=寨子里的钵钵菜&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      }
+    ],
+    "restaurant_snapshots": [
+      {
+        "schema_version": "restaurant-source-snapshot/v1",
+        "snapshot_id": "snap-cs-benluobo",
+        "restaurant_id": "rest-cs-benluobo",
+        "applicable_date": "2026-10-03",
+        "time_window": "17:00–18:15",
+        "status": "platform_reported",
+        "platform_signals": [
+          {
+            "platform": "高德地图",
+            "rating": "4.5",
+            "scale": "5",
+            "review_count": 1280,
+            "per_person": "约¥55",
+            "status": "platform_reported",
+            "checked_at": "2026-09-28",
+            "source_ids": [
+              "source-amap-platform"
+            ]
+          }
+        ],
+        "community_consensus": {
+          "platform": "小红书",
+          "status": "unavailable",
+          "query_runs": [
+            {
+              "keyword": "笨萝卜浏阳菜馆 长沙 排队",
+              "filters": {
+                "publish_time": "year"
+              },
+              "executed_at": "2026-09-28"
+            }
+          ],
+          "failure_kind": "no_results",
+          "unavailable_reason": "本地环境未接入小红书实时数据源，建议临行通过手动链接查验最新排队",
+          "manual_action_links": [
+            {
+              "label": "在小红书查看笨萝卜浏阳菜馆(五一广场店)近期反馈",
+              "url": "https://www.xiaohongshu.com/search_result?keyword=%E7%AC%A8%E8%90%9D%E5%8D%9C%E6%B5%8F%E9%98%B3%E8%8F%9C%E9%A6%86%28%E4%BA%94%E4%B8%80%E5%B9%BF%E5%9C%BA%E5%BA%97%29"
+            }
+          ],
+          "recheck_at": "2026-10-03T16:00:00+08:00",
+          "checked_at": "2026-09-28",
+          "notes_considered": 0,
+          "recent_note_count": 0,
+          "positive": [],
+          "negative": [],
+          "promotion_risk": "unknown",
+          "confidence": "medium",
+          "references": []
+        },
+        "operations": {
+          "opening_hours": "11:00-14:00, 16:30-21:00",
+          "reservation": "现场排队，建议17:00早晚市进店",
+          "queue": "17:00开餐现场排号",
+          "parking": "公共交通到达",
+          "status": "platform_reported",
+          "checked_at": "2026-09-28",
+          "recheck_at": "2026-10-03T16:00:00+08:00"
+        },
+        "checked_at": "2026-09-28",
+        "expires_at": "2026-10-03T16:00:00+08:00",
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "复核笨萝卜",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=112.973210,28.192540&name=笨萝卜&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "schema_version": "restaurant-source-snapshot/v1",
+        "snapshot_id": "snap-cs-feidachu",
+        "restaurant_id": "rest-cs-feidachu",
+        "applicable_date": "2026-10-03",
+        "time_window": "17:00–18:15",
+        "status": "platform_reported",
+        "platform_signals": [
+          {
+            "platform": "高德地图",
+            "rating": "4.7",
+            "scale": "5",
+            "review_count": 2150,
+            "per_person": "约¥70",
+            "status": "platform_reported",
+            "checked_at": "2026-09-28",
+            "source_ids": [
+              "source-amap-platform"
+            ]
+          }
+        ],
+        "community_consensus": {
+          "platform": "小红书",
+          "status": "unavailable",
+          "query_runs": [
+            {
+              "keyword": "费大厨辣椒炒肉 长沙 评价",
+              "filters": {
+                "publish_time": "year"
+              },
+              "executed_at": "2026-09-28"
+            }
+          ],
+          "failure_kind": "no_results",
+          "unavailable_reason": "本地环境未接入小红书实时数据源，建议临行通过手动链接查验最新排队",
+          "manual_action_links": [
+            {
+              "label": "在小红书查看费大厨辣椒炒肉(五一广场平和堂店)近期反馈",
+              "url": "https://www.xiaohongshu.com/search_result?keyword=%E8%B4%B9%E5%A4%A7%E5%8E%A8%E8%BE%A3%E6%A4%92%E7%82%92%E8%82%89%28%E4%BA%94%E4%B8%80%E5%B9%BF%E5%9C%BA%E5%B9%B3%E5%92%8C%E5%A0%82%E5%BA%97%29"
+            }
+          ],
+          "recheck_at": "2026-10-03T16:00:00+08:00",
+          "checked_at": "2026-09-28",
+          "notes_considered": 0,
+          "recent_note_count": 0,
+          "positive": [],
+          "negative": [],
+          "promotion_risk": "unknown",
+          "confidence": "medium",
+          "references": []
+        },
+        "operations": {
+          "opening_hours": "11:00-21:00",
+          "reservation": "商场公众号提前线上取号",
+          "queue": "建议提前在线取号",
+          "parking": "商场地下停车场",
+          "status": "platform_reported",
+          "checked_at": "2026-09-28",
+          "recheck_at": "2026-10-03T16:00:00+08:00"
+        },
+        "checked_at": "2026-09-28",
+        "expires_at": "2026-10-03T16:00:00+08:00",
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "复核费大厨",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=112.977210,28.194210&name=费大厨&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "schema_version": "restaurant-source-snapshot/v1",
+        "snapshot_id": "snap-d2-zjj-fuzhengyi",
+        "restaurant_id": "rest-zjj-fuzhengyi",
+        "applicable_date": "2026-10-04",
+        "time_window": "18:30–20:00",
+        "status": "platform_reported",
+        "platform_signals": [
+          {
+            "platform": "高德地图",
+            "rating": "4.6",
+            "scale": "5",
+            "review_count": 1820,
+            "per_person": "约¥58",
+            "status": "platform_reported",
+            "checked_at": "2026-09-28",
+            "source_ids": [
+              "source-amap-platform"
+            ]
+          }
+        ],
+        "community_consensus": {
+          "platform": "小红书",
+          "status": "unavailable",
+          "query_runs": [
+            {
+              "keyword": "富正毅三下锅 张家界 评价",
+              "filters": {
+                "publish_time": "year"
+              },
+              "executed_at": "2026-09-28"
+            }
+          ],
+          "failure_kind": "no_results",
+          "unavailable_reason": "本地环境未接入小红书实时数据源，建议临行通过手动链接查验最新排队",
+          "manual_action_links": [
+            {
+              "label": "在小红书查看富正毅三下锅(索道公司店)近期反馈",
+              "url": "https://www.xiaohongshu.com/search_result?keyword=%E5%AF%8C%E6%AD%A3%E6%AF%85%E4%B8%89%E4%B8%8B%E9%94%85%28%E7%B4%A2%E9%81%93%E5%85%AC%E5%8F%B8%E5%BA%97%29"
+            }
+          ],
+          "recheck_at": "2026-10-03T16:00:00+08:00",
+          "checked_at": "2026-09-28",
+          "notes_considered": 0,
+          "recent_note_count": 0,
+          "positive": [],
+          "negative": [],
+          "promotion_risk": "unknown",
+          "confidence": "medium",
+          "references": []
+        },
+        "operations": {
+          "opening_hours": "10:00-22:00",
+          "reservation": "高峰期叫号排队，18:00前进店基本无需等待",
+          "queue": "现场排队",
+          "parking": "周边公共划线车位",
+          "status": "platform_reported",
+          "checked_at": "2026-09-28",
+          "recheck_at": "2026-10-04T16:00:00+08:00"
+        },
+        "checked_at": "2026-09-28",
+        "expires_at": "2026-10-04T16:00:00+08:00",
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "复核富正毅三下锅",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=110.481318,29.111375&name=富正毅三下锅&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "schema_version": "restaurant-source-snapshot/v1",
+        "snapshot_id": "snap-d2-zjj-bobo-city",
+        "restaurant_id": "rest-zjj-bobo-city",
+        "applicable_date": "2026-10-04",
+        "time_window": "18:30–20:00",
+        "status": "platform_reported",
+        "platform_signals": [
+          {
+            "platform": "高德地图",
+            "rating": "4.5",
+            "scale": "5",
+            "review_count": 940,
+            "per_person": "约¥52",
+            "status": "platform_reported",
+            "checked_at": "2026-09-28",
+            "source_ids": [
+              "source-amap-platform"
+            ]
+          }
+        ],
+        "community_consensus": {
+          "platform": "小红书",
+          "status": "unavailable",
+          "query_runs": [
+            {
+              "keyword": "寨子里的钵钵菜 天门山 评价",
+              "filters": {
+                "publish_time": "year"
+              },
+              "executed_at": "2026-09-28"
+            }
+          ],
+          "failure_kind": "no_results",
+          "unavailable_reason": "本地环境未接入小红书实时数据源，建议临行通过手动链接查验最新排队",
+          "manual_action_links": [
+            {
+              "label": "在小红书查看寨子里的钵钵菜(天门山索道店)近期反馈",
+              "url": "https://www.xiaohongshu.com/search_result?keyword=%E5%AF%A8%E5%AD%90%E9%87%8C%E7%9A%84%E9%92%B5%E9%92%B5%E8%8F%9C%28%E5%A4%A9%E9%97%A8%E5%B1%B1%E7%B4%A2%E9%81%93%E5%BA%97%29"
+            }
+          ],
+          "recheck_at": "2026-10-03T16:00:00+08:00",
+          "checked_at": "2026-09-28",
+          "notes_considered": 0,
+          "recent_note_count": 0,
+          "positive": [],
+          "negative": [],
+          "promotion_risk": "unknown",
+          "confidence": "medium",
+          "references": []
+        },
+        "operations": {
+          "opening_hours": "11:00-21:30",
+          "reservation": "散客随到随坐",
+          "queue": "备选通道，排队极短",
+          "parking": "门口车位",
+          "status": "platform_reported",
+          "checked_at": "2026-09-28",
+          "recheck_at": "2026-10-04T16:00:00+08:00"
+        },
+        "checked_at": "2026-09-28",
+        "expires_at": "2026-10-04T16:00:00+08:00",
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "复核寨子里的钵钵菜",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=110.484889,29.110318&name=寨子里的钵钵菜&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "schema_version": "restaurant-source-snapshot/v1",
+        "snapshot_id": "snap-d3-zjj-bobo-city",
+        "restaurant_id": "rest-zjj-bobo-city",
+        "applicable_date": "2026-10-05",
+        "time_window": "17:30–19:00",
+        "status": "platform_reported",
+        "platform_signals": [
+          {
+            "platform": "高德地图",
+            "rating": "4.5",
+            "scale": "5",
+            "review_count": 940,
+            "per_person": "约¥52",
+            "status": "platform_reported",
+            "checked_at": "2026-09-28",
+            "source_ids": [
+              "source-amap-platform"
+            ]
+          }
+        ],
+        "community_consensus": {
+          "platform": "小红书",
+          "status": "unavailable",
+          "query_runs": [
+            {
+              "keyword": "寨子里的钵钵菜 天门山 评价",
+              "filters": {
+                "publish_time": "year"
+              },
+              "executed_at": "2026-09-28"
+            }
+          ],
+          "failure_kind": "no_results",
+          "unavailable_reason": "本地环境未接入小红书实时数据源，建议临行通过手动链接查验最新排队",
+          "manual_action_links": [
+            {
+              "label": "在小红书查看寨子里的钵钵菜(天门山索道店)近期反馈",
+              "url": "https://www.xiaohongshu.com/search_result?keyword=%E5%AF%A8%E5%AD%90%E9%87%8C%E7%9A%84%E9%92%B5%E9%92%B5%E8%8F%9C%28%E5%A4%A9%E9%97%A8%E5%B1%B1%E7%B4%A2%E9%81%93%E5%BA%97%29"
+            }
+          ],
+          "recheck_at": "2026-10-03T16:00:00+08:00",
+          "checked_at": "2026-09-28",
+          "notes_considered": 0,
+          "recent_note_count": 0,
+          "positive": [],
+          "negative": [],
+          "promotion_risk": "unknown",
+          "confidence": "medium",
+          "references": []
+        },
+        "operations": {
+          "opening_hours": "11:00-21:30",
+          "reservation": "现场就坐",
+          "queue": "17:30早晚市无需排队",
+          "parking": "门口车位",
+          "status": "platform_reported",
+          "checked_at": "2026-09-28",
+          "recheck_at": "2026-10-05T16:00:00+08:00"
+        },
+        "checked_at": "2026-09-28",
+        "expires_at": "2026-10-05T16:00:00+08:00",
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "复核寨子里的钵钵菜",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=110.484889,29.110318&name=寨子里的钵钵菜&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "schema_version": "restaurant-source-snapshot/v1",
+        "snapshot_id": "snap-d3-zjj-fuzhengyi",
+        "restaurant_id": "rest-zjj-fuzhengyi",
+        "applicable_date": "2026-10-05",
+        "time_window": "17:30–19:00",
+        "status": "platform_reported",
+        "platform_signals": [
+          {
+            "platform": "高德地图",
+            "rating": "4.6",
+            "scale": "5",
+            "review_count": 1820,
+            "per_person": "约¥58",
+            "status": "platform_reported",
+            "checked_at": "2026-09-28",
+            "source_ids": [
+              "source-amap-platform"
+            ]
+          }
+        ],
+        "community_consensus": {
+          "platform": "小红书",
+          "status": "unavailable",
+          "query_runs": [
+            {
+              "keyword": "富正毅三下锅 张家界 评价",
+              "filters": {
+                "publish_time": "year"
+              },
+              "executed_at": "2026-09-28"
+            }
+          ],
+          "failure_kind": "no_results",
+          "unavailable_reason": "本地环境未接入小红书实时数据源，建议临行通过手动链接查验最新排队",
+          "manual_action_links": [
+            {
+              "label": "在小红书查看富正毅三下锅(索道公司店)近期反馈",
+              "url": "https://www.xiaohongshu.com/search_result?keyword=%E5%AF%8C%E6%AD%A3%E6%AF%85%E4%B8%89%E4%B8%8B%E9%94%85%28%E7%B4%A2%E9%81%93%E5%85%AC%E5%8F%B8%E5%BA%97%29"
+            }
+          ],
+          "recheck_at": "2026-10-03T16:00:00+08:00",
+          "checked_at": "2026-09-28",
+          "notes_considered": 0,
+          "recent_note_count": 0,
+          "positive": [],
+          "negative": [],
+          "promotion_risk": "unknown",
+          "confidence": "medium",
+          "references": []
+        },
+        "operations": {
+          "opening_hours": "10:00-22:00",
+          "reservation": "备选换餐",
+          "queue": "连住备选",
+          "parking": "周边车位",
+          "status": "platform_reported",
+          "checked_at": "2026-09-28",
+          "recheck_at": "2026-10-05T16:00:00+08:00"
+        },
+        "checked_at": "2026-09-28",
+        "expires_at": "2026-10-05T16:00:00+08:00",
+        "action_links": [
+          {
+            "type": "restaurant",
+            "label": "复核富正毅三下锅",
+            "provider": "高德地图",
+            "url": "https://uri.amap.com/marker?position=110.481318,29.111375&name=富正毅三下锅&src=travel-planning"
+          }
+        ],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      }
+    ],
+    "meal_baseline_routes": [
+      {
+        "id": "base-d1-dinner",
+        "meal_id": "meal-d1-dinner",
+        "from_anchor": {
+          "name": "太平老街北口",
+          "physical_address": "湖南省长沙市天心区太平老街北门",
+          "coordinates": "112.971285,28.195240"
+        },
+        "to_anchor": {
+          "name": "五一广场地铁站",
+          "physical_address": "湖南省长沙市天心区五一广场地铁站7号口",
+          "coordinates": "112.977210,28.194210"
+        },
+        "mode": "walking",
+        "routing_policy": "shortest_time",
+        "departure_at": "2026-10-03T17:00:00+08:00",
+        "distance_meters": 680,
+        "duration_minutes": 8,
+        "door_to_door_minutes": 10,
+        "map_url": "https://uri.amap.com/navigation?from=112.971285,28.195240&to=112.977210,28.194210&mode=walk",
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "base-d2-dinner",
+        "meal_id": "meal-d2-dinner",
+        "from_anchor": {
+          "name": "张家界指南针客栈(天门山索道店)",
+          "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+          "coordinates": "110.483317,29.110084"
+        },
+        "to_anchor": {
+          "name": "天门山索道下站广场",
+          "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+          "coordinates": "110.483437,29.111698"
+        },
+        "mode": "walking",
+        "routing_policy": "shortest_time",
+        "departure_at": "2026-10-04T18:30:00+08:00",
+        "distance_meters": 452,
+        "duration_minutes": 6,
+        "door_to_door_minutes": 8,
+        "map_url": "https://uri.amap.com/navigation?from=110.483317,29.110084&to=110.483437,29.111698&mode=walk",
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "base-d3-dinner",
+        "meal_id": "meal-d3-dinner",
+        "from_anchor": {
+          "name": "张家界指南针客栈(天门山索道店)",
+          "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+          "coordinates": "110.483317,29.110084"
+        },
+        "to_anchor": {
+          "name": "天门山索道下站广场",
+          "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+          "coordinates": "110.483437,29.111698"
+        },
+        "mode": "walking",
+        "routing_policy": "shortest_time",
+        "departure_at": "2026-10-05T17:30:00+08:00",
+        "distance_meters": 452,
+        "duration_minutes": 6,
+        "door_to_door_minutes": 8,
+        "map_url": "https://uri.amap.com/navigation?from=110.483317,29.110084&to=110.483437,29.111698&mode=walk",
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      }
+    ],
+    "meal_route_evaluations": [
+      {
+        "id": "eval-d1-benluobo",
+        "meal_id": "meal-d1-dinner",
+        "restaurant_id": "rest-cs-benluobo",
+        "baseline_route_id": "base-d1-dinner",
+        "comparison_basis": {
+          "mode": "walking",
+          "routing_policy": "shortest_time",
+          "departure_at": "2026-10-03T17:00:00+08:00"
+        },
+        "from_previous": {
+          "route_id": "route-eval-d1-1",
+          "origin": {
+            "name": "太平老街北口",
+            "physical_address": "湖南省长沙市天心区太平老街北门",
+            "coordinates": "112.971285,28.195240"
+          },
+          "destination": {
+            "name": "笨萝卜浏阳菜馆(五一广场店)",
+            "physical_address": "湖南省长沙市天心区黄兴南路440号",
+            "coordinates": "112.973210,28.192540"
+          },
+          "distance_meters": 350,
+          "duration_minutes": 5,
+          "door_to_door_minutes": 6,
+          "map_url": "https://uri.amap.com/navigation?from=112.971285,28.195240&to=112.973210,28.192540&mode=walk"
+        },
+        "to_next": {
+          "route_id": "route-eval-d1-2",
+          "origin": {
+            "name": "笨萝卜浏阳菜馆(五一广场店)",
+            "physical_address": "湖南省长沙市天心区黄兴南路440号",
+            "coordinates": "112.973210,28.192540"
+          },
+          "destination": {
+            "name": "五一广场地铁站",
+            "physical_address": "湖南省长沙市天心区五一广场地铁站7号口",
+            "coordinates": "112.977210,28.194210"
+          },
+          "distance_meters": 577,
+          "duration_minutes": 7,
+          "door_to_door_minutes": 8,
+          "map_url": "https://uri.amap.com/navigation?from=112.973210,28.192540&to=112.977210,28.194210&mode=walk"
+        },
+        "total_door_to_door_minutes": 14,
+        "baseline_door_to_door_minutes": 10,
+        "detour_minutes": 4,
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "eval-d1-feidachu",
+        "meal_id": "meal-d1-dinner",
+        "restaurant_id": "rest-cs-feidachu",
+        "baseline_route_id": "base-d1-dinner",
+        "comparison_basis": {
+          "mode": "walking",
+          "routing_policy": "shortest_time",
+          "departure_at": "2026-10-03T17:00:00+08:00"
+        },
+        "from_previous": {
+          "route_id": "route-eval-d1-3",
+          "origin": {
+            "name": "太平老街北口",
+            "physical_address": "湖南省长沙市天心区太平老街北门",
+            "coordinates": "112.971285,28.195240"
+          },
+          "destination": {
+            "name": "费大厨辣椒炒肉(五一广场平和堂店)",
+            "physical_address": "湖南省长沙市芙蓉区黄兴中路88号平和堂7楼",
+            "coordinates": "112.977210,28.194210"
+          },
+          "distance_meters": 590,
+          "duration_minutes": 8,
+          "door_to_door_minutes": 9,
+          "map_url": "https://uri.amap.com/navigation?from=112.971285,28.195240&to=112.977210,28.194210&mode=walk"
+        },
+        "to_next": {
+          "route_id": "route-eval-d1-4",
+          "origin": {
+            "name": "费大厨辣椒炒肉(五一广场平和堂店)",
+            "physical_address": "湖南省长沙市芙蓉区黄兴中路88号平和堂7楼",
+            "coordinates": "112.977210,28.194210"
+          },
+          "destination": {
+            "name": "五一广场地铁站",
+            "physical_address": "湖南省长沙市天心区五一广场地铁站7号口",
+            "coordinates": "112.977210,28.194210"
+          },
+          "distance_meters": 20,
+          "duration_minutes": 1,
+          "door_to_door_minutes": 2,
+          "map_url": "https://uri.amap.com/navigation?from=112.977210,28.194210&to=112.977210,28.194210&mode=walk"
+        },
+        "total_door_to_door_minutes": 11,
+        "baseline_door_to_door_minutes": 10,
+        "detour_minutes": 1,
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "eval-d2-fuzhengyi",
+        "meal_id": "meal-d2-dinner",
+        "restaurant_id": "rest-zjj-fuzhengyi",
+        "baseline_route_id": "base-d2-dinner",
+        "comparison_basis": {
+          "mode": "walking",
+          "routing_policy": "shortest_time",
+          "departure_at": "2026-10-04T18:30:00+08:00"
+        },
+        "from_previous": {
+          "route_id": "route-eval-d2-1",
+          "origin": {
+            "name": "张家界指南针客栈(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+            "coordinates": "110.483317,29.110084"
+          },
+          "destination": {
+            "name": "富正毅三下锅(索道公司店)",
+            "physical_address": "湖南省张家界市永定区官黎坪办事处官黎坪居委会六组",
+            "coordinates": "110.481318,29.111375"
+          },
+          "distance_meters": 337,
+          "duration_minutes": 4,
+          "door_to_door_minutes": 5,
+          "map_url": "https://uri.amap.com/navigation?from=110.483317,29.110084&to=110.481318,29.111375&mode=walk"
+        },
+        "to_next": {
+          "route_id": "route-eval-d2-2",
+          "origin": {
+            "name": "富正毅三下锅(索道公司店)",
+            "physical_address": "湖南省张家界市永定区官黎坪办事处官黎坪居委会六组",
+            "coordinates": "110.481318,29.111375"
+          },
+          "destination": {
+            "name": "天门山索道下站广场",
+            "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+            "coordinates": "110.483437,29.111698"
+          },
+          "distance_meters": 243,
+          "duration_minutes": 3,
+          "door_to_door_minutes": 4,
+          "map_url": "https://uri.amap.com/navigation?from=110.481318,29.111375&to=110.483437,29.111698&mode=walk"
+        },
+        "total_door_to_door_minutes": 9,
+        "baseline_door_to_door_minutes": 8,
+        "detour_minutes": 1,
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "eval-d2-bobo",
+        "meal_id": "meal-d2-dinner",
+        "restaurant_id": "rest-zjj-bobo-city",
+        "baseline_route_id": "base-d2-dinner",
+        "comparison_basis": {
+          "mode": "walking",
+          "routing_policy": "shortest_time",
+          "departure_at": "2026-10-04T18:30:00+08:00"
+        },
+        "from_previous": {
+          "route_id": "route-eval-d2-3",
+          "origin": {
+            "name": "张家界指南针客栈(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+            "coordinates": "110.483317,29.110084"
+          },
+          "destination": {
+            "name": "寨子里的钵钵菜(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区南城金座东门西北70米",
+            "coordinates": "110.484889,29.110318"
+          },
+          "distance_meters": 216,
+          "duration_minutes": 2,
+          "door_to_door_minutes": 3,
+          "map_url": "https://uri.amap.com/navigation?from=110.483317,29.110084&to=110.484889,29.110318&mode=walk"
+        },
+        "to_next": {
+          "route_id": "route-eval-d2-4",
+          "origin": {
+            "name": "寨子里的钵钵菜(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区南城金座东门西北70米",
+            "coordinates": "110.484889,29.110318"
+          },
+          "destination": {
+            "name": "天门山索道下站广场",
+            "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+            "coordinates": "110.483437,29.111698"
+          },
+          "distance_meters": 423,
+          "duration_minutes": 5,
+          "door_to_door_minutes": 6,
+          "map_url": "https://uri.amap.com/navigation?from=110.484889,29.110318&to=110.483437,29.111698&mode=walk"
+        },
+        "total_door_to_door_minutes": 9,
+        "baseline_door_to_door_minutes": 8,
+        "detour_minutes": 1,
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "eval-d3-bobo",
+        "meal_id": "meal-d3-dinner",
+        "restaurant_id": "rest-zjj-bobo-city",
+        "baseline_route_id": "base-d3-dinner",
+        "comparison_basis": {
+          "mode": "walking",
+          "routing_policy": "shortest_time",
+          "departure_at": "2026-10-05T17:30:00+08:00"
+        },
+        "from_previous": {
+          "route_id": "route-eval-d3-1",
+          "origin": {
+            "name": "张家界指南针客栈(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+            "coordinates": "110.483317,29.110084"
+          },
+          "destination": {
+            "name": "寨子里的钵钵菜(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区南城金座东门西北70米",
+            "coordinates": "110.484889,29.110318"
+          },
+          "distance_meters": 216,
+          "duration_minutes": 2,
+          "door_to_door_minutes": 3,
+          "map_url": "https://uri.amap.com/navigation?from=110.483317,29.110084&to=110.484889,29.110318&mode=walk"
+        },
+        "to_next": {
+          "route_id": "route-eval-d3-2",
+          "origin": {
+            "name": "寨子里的钵钵菜(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区南城金座东门西北70米",
+            "coordinates": "110.484889,29.110318"
+          },
+          "destination": {
+            "name": "天门山索道下站广场",
+            "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+            "coordinates": "110.483437,29.111698"
+          },
+          "distance_meters": 423,
+          "duration_minutes": 5,
+          "door_to_door_minutes": 6,
+          "map_url": "https://uri.amap.com/navigation?from=110.484889,29.110318&to=110.483437,29.111698&mode=walk"
+        },
+        "total_door_to_door_minutes": 9,
+        "baseline_door_to_door_minutes": 8,
+        "detour_minutes": 1,
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "eval-d3-fuzhengyi",
+        "meal_id": "meal-d3-dinner",
+        "restaurant_id": "rest-zjj-fuzhengyi",
+        "baseline_route_id": "base-d3-dinner",
+        "comparison_basis": {
+          "mode": "walking",
+          "routing_policy": "shortest_time",
+          "departure_at": "2026-10-05T17:30:00+08:00"
+        },
+        "from_previous": {
+          "route_id": "route-eval-d3-3",
+          "origin": {
+            "name": "张家界指南针客栈(天门山索道店)",
+            "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+            "coordinates": "110.483317,29.110084"
+          },
+          "destination": {
+            "name": "富正毅三下锅(索道公司店)",
+            "physical_address": "湖南省张家界市永定区官黎坪办事处官黎坪居委会六组",
+            "coordinates": "110.481318,29.111375"
+          },
+          "distance_meters": 337,
+          "duration_minutes": 4,
+          "door_to_door_minutes": 5,
+          "map_url": "https://uri.amap.com/navigation?from=110.483317,29.110084&to=110.481318,29.111375&mode=walk"
+        },
+        "to_next": {
+          "route_id": "route-eval-d3-4",
+          "origin": {
+            "name": "富正毅三下锅(索道公司店)",
+            "physical_address": "湖南省张家界市永定区官黎坪办事处官黎坪居委会六组",
+            "coordinates": "110.481318,29.111375"
+          },
+          "destination": {
+            "name": "天门山索道下站广场",
+            "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+            "coordinates": "110.483437,29.111698"
+          },
+          "distance_meters": 243,
+          "duration_minutes": 3,
+          "door_to_door_minutes": 4,
+          "map_url": "https://uri.amap.com/navigation?from=110.481318,29.111375&to=110.483437,29.111698&mode=walk"
+        },
+        "total_door_to_door_minutes": 9,
+        "baseline_door_to_door_minutes": 8,
+        "detour_minutes": 1,
+        "checked_at": "2026-09-28",
+        "source_ids": [
+          "source-amap"
+        ]
+      }
+    ],
+    "meal_options": [
+      {
+        "id": "meal-d1-dinner",
+        "meal_type": "晚餐",
+        "research_status": "complete",
+        "name": "长沙五一商圈特色湘味晚餐",
+        "time_window": "17:00–18:15",
+        "previous_anchor": {
+          "name": "太平老街北口",
+          "physical_address": "湖南省长沙市天心区太平老街北门",
+          "coordinates": "112.971285,28.195240"
+        },
+        "next_anchor": {
+          "name": "五一广场地铁站",
+          "physical_address": "湖南省长沙市天心区五一广场地铁站7号口",
+          "coordinates": "112.977210,28.194210"
+        },
+        "constraints": {
+          "max_detour_minutes": 10,
+          "max_queue_minutes": 25,
+          "budget_per_person": "¥50–70"
+        },
+        "baseline_route_id": "base-d1-dinner",
+        "candidate_ids": [
+          "rest-cs-benluobo",
+          "rest-cs-feidachu"
+        ],
+        "selected_candidate_id": "rest-cs-benluobo",
+        "fallback_candidate_ids": [
+          "rest-cs-feidachu"
+        ],
+        "candidates": [
+          {
+            "restaurant_id": "rest-cs-benluobo",
+            "snapshot_id": "snap-cs-benluobo",
+            "route_evaluation_id": "eval-d1-benluobo",
+            "rank": 1
+          },
+          {
+            "restaurant_id": "rest-cs-feidachu",
+            "snapshot_id": "snap-cs-feidachu",
+            "route_evaluation_id": "eval-d1-feidachu",
+            "rank": 2
+          }
+        ],
+        "candidate_policy": {
+          "status": "normal",
+          "minimum": 2,
+          "searched_count": 4
+        },
+        "selection_summary": "笨萝卜具高性价比地道湘菜口碑，17:00早晚市排队较短；若等位超限切换费大厨在线叫号",
+        "fallback_rule": "现场等位超过20分钟切换费大厨",
+        "checked_at": "2026-09-28",
+        "action_links": [],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "id": "meal-d2-dinner",
+        "meal_type": "晚餐",
+        "research_status": "complete",
+        "name": "富正毅三下锅老字号晚餐",
+        "time_window": "18:30–20:00",
+        "previous_anchor": {
+          "name": "张家界指南针客栈(天门山索道店)",
+          "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+          "coordinates": "110.483317,29.110084"
+        },
+        "next_anchor": {
+          "name": "天门山索道下站广场",
+          "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+          "coordinates": "110.483437,29.111698"
+        },
+        "constraints": {
+          "max_detour_minutes": 15,
+          "max_queue_minutes": 20,
+          "budget_per_person": "¥55–75"
+        },
+        "baseline_route_id": "base-d2-dinner",
+        "candidate_ids": [
+          "rest-zjj-fuzhengyi",
+          "rest-zjj-bobo-city"
+        ],
+        "selected_candidate_id": "rest-zjj-fuzhengyi",
+        "fallback_candidate_ids": [
+          "rest-zjj-bobo-city"
+        ],
+        "candidates": [
+          {
+            "restaurant_id": "rest-zjj-fuzhengyi",
+            "snapshot_id": "snap-d2-zjj-fuzhengyi",
+            "route_evaluation_id": "eval-d2-fuzhengyi",
+            "rank": 1
+          },
+          {
+            "restaurant_id": "rest-zjj-bobo-city",
+            "snapshot_id": "snap-d2-zjj-bobo-city",
+            "route_evaluation_id": "eval-d2-bobo",
+            "rank": 2
+          }
+        ],
+        "candidate_policy": {
+          "status": "normal",
+          "minimum": 2,
+          "searched_count": 4
+        },
+        "selection_summary": "富正毅索道公司店为张家界本地老牌干锅，核桃肉与牛肚招牌口碑过硬，武陵源大环线徒步转场后步行4分钟即达",
+        "fallback_rule": "排队超时可转战隔壁寨子里的钵钵菜",
+        "checked_at": "2026-09-28",
+        "action_links": [],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      },
+      {
+        "id": "meal-d3-dinner",
+        "meal_type": "晚餐",
+        "research_status": "complete",
+        "name": "寨子里的钵钵菜地道晚餐",
+        "time_window": "17:30–19:00",
+        "previous_anchor": {
+          "name": "张家界指南针客栈(天门山索道店)",
+          "physical_address": "湖南省张家界市永定区大庸路9号花语堂B栋",
+          "coordinates": "110.483317,29.110084"
+        },
+        "next_anchor": {
+          "name": "天门山索道下站广场",
+          "physical_address": "湖南省张家界市永定区大庸路天门山索道下站广场",
+          "coordinates": "110.483437,29.111698"
+        },
+        "constraints": {
+          "max_detour_minutes": 15,
+          "max_queue_minutes": 20,
+          "budget_per_person": "¥50–70"
+        },
+        "baseline_route_id": "base-d3-dinner",
+        "candidate_ids": [
+          "rest-zjj-bobo-city",
+          "rest-zjj-fuzhengyi"
+        ],
+        "selected_candidate_id": "rest-zjj-bobo-city",
+        "fallback_candidate_ids": [
+          "rest-zjj-fuzhengyi"
+        ],
+        "candidates": [
+          {
+            "restaurant_id": "rest-zjj-bobo-city",
+            "snapshot_id": "snap-d3-zjj-bobo-city",
+            "route_evaluation_id": "eval-d3-bobo",
+            "rank": 1
+          },
+          {
+            "restaurant_id": "rest-zjj-fuzhengyi",
+            "snapshot_id": "snap-d3-zjj-fuzhengyi",
+            "route_evaluation_id": "eval-d3-fuzhengyi",
+            "rank": 2
+          }
+        ],
+        "candidate_policy": {
+          "status": "normal",
+          "minimum": 2,
+          "searched_count": 4
+        },
+        "selection_summary": "寨子里的钵钵菜为索道下站南城金座老牌特色，步行仅2分钟，滋补土鸡钵下饭暖胃，缓解天门山登高疲劳",
+        "fallback_rule": "满座切换富正毅三下锅",
+        "checked_at": "2026-09-28",
+        "action_links": [],
+        "source_ids": [
+          "source-amap-platform",
+          "source-amap"
+        ]
+      }
+    ],
+    "weather": [
+      {
+        "id": "wx-d1",
+        "date": "2026-10-03",
+        "location": "长沙/张家界武陵源",
+        "basis": "中央气象台与Open-Meteo高精度逐小时预报",
+        "icon_code": "drizzle",
+        "summary": "气温16.2~18.4°C，毛毛细雨微风。每小时走势：08:00(16.2°C) ➔ 11:00(17.4°C) ➔ 14:00(18.4°C) ➔ 17:00(17.3°C) ➔ 20:00(17.3°C/阴转多云) · 橘洲小火车遮雨，夜间列车平稳，夜宿武陵源干爽清凉",
+        "temperature": "16.2°C – 18.4°C",
+        "warning": "橘洲漫步偶有轻微毛毛雨，随身备轻便折叠伞",
+        "status": "platform_reported",
+        "checked_at": "2026-09-28",
+        "action_links": [
+          {
+            "type": "weather",
+            "label": "查看中央气象台逐小时精细天气",
+            "provider": "中央气象台",
+            "url": "https://www.nmc.cn/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "出发前48小时复核逐小时降水预警"
+          }
+        ]
+      },
+      {
+        "id": "wx-d2",
+        "date": "2026-10-04",
+        "location": "张家界武陵源/市区",
+        "basis": "中央气象台与Open-Meteo高精度逐小时预报",
+        "icon_code": "cloudy",
+        "summary": "气温15.6~20.0°C，全天0.0mm绝无降水，干爽阴天！每小时走势：08:00(16.8°C) ➔ 10:00(17.9°C) ➔ 12:00(19.2°C) ➔ 14:00(20.0°C) ➔ 17:00(19.5°C) ➔ 20:00(18.5°C) · 能见度极高，石海峰林一览无余，百龙天梯与悬崖栈道安全无滑倒风险，登山黄金期",
+        "temperature": "14.8°C – 15.8°C",
+        "warning": "全天干爽无雨，山顶气温微凉宜备防风外套",
+        "status": "platform_reported",
+        "checked_at": "2026-09-28",
+        "action_links": [
+          {
+            "type": "weather",
+            "label": "查看武陵源逐小时精细天气",
+            "provider": "中央气象台",
+            "url": "https://www.nmc.cn/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "雨天峰林水汽浓厚极易见烟云奇景"
+          }
+        ]
+      },
+      {
+        "id": "wx-d3",
+        "date": "2026-10-05",
+        "location": "张家界市区/天门山",
+        "basis": "中央气象台与Open-Meteo高精度逐小时预报",
+        "icon_code": "clear_day",
+        "summary": "气温8.9~16.9°C，全天0.0mm降水，秋高气爽大晴天！每小时走势：08:00(11.4°C) ➔ 10:00(13.3°C) ➔ 12:00(15.8°C/阳光明媚) ➔ 14:00(16.9°C/大晴天) ➔ 17:00(13.6°C) ➔ 20:00(9.6°C) · 秋高气爽阳光灿烂，天门山大索道破云直上，悬崖玻璃栈道绝美视野，登顶体验极佳",
+        "temperature": "16.5°C – 20.0°C",
+        "warning": "早晚温差较大，晨起登山需穿保暖长袖或软壳冲锋衣，午间阳光舒适",
+        "status": "platform_reported",
+        "checked_at": "2026-09-28",
+        "action_links": [
+          {
+            "type": "weather",
+            "label": "查看天门山逐小时精细天气",
+            "provider": "中央气象台",
+            "url": "https://www.nmc.cn/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "秋高气爽能见度高"
+          }
+        ]
+      },
+      {
+        "id": "wx-d4",
+        "date": "2026-10-06",
+        "location": "张家界市区/杭州",
+        "basis": "中央气象台与Open-Meteo高精度逐小时预报",
+        "icon_code": "partly_cloudy",
+        "summary": "气温15.1~30.2°C，晴朗舒适。每小时走势：09:00(19.0°C) ➔ 12:00(26.9°C) ➔ 14:39乘G221(车内恒温) ➔ 21:09抵杭东站(21.5°C/清爽) · 全天0%降水，高铁沿线天气晴好，返杭从容顺畅",
+        "temperature": "8.9°C – 16.9°C",
+        "warning": "晨间气温偏凉需穿长袖，午间舒适宜人",
+        "status": "platform_reported",
+        "checked_at": "2026-09-28",
+        "action_links": [
+          {
+            "type": "weather",
+            "label": "查看返程沿线逐小时天气",
+            "provider": "中央气象台",
+            "url": "https://www.nmc.cn/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "沿线晴好，列车准点率高"
+          }
+        ]
+      }
+    ],
+    "attractions": [
+      {
+        "id": "attraction-juzizhou",
+        "name": "长沙橘子洲景区",
+        "area": "湖南省长沙市岳麓区橘子洲头",
+        "seasonal_highlights": [
+          "青年毛泽东雕塑",
+          "湘江水岸风光",
+          "望江亭"
+        ],
+        "best_time": "中午至午后",
+        "best_time_reason": "光线柔和，气温舒适，小火车往返省时省力",
+        "visit_duration": "约 3 小时",
+        "official": {
+          "physical_address": "湖南省长沙市岳麓区橘子洲头2号",
+          "homepage_url": "https://www.juzizhou.gov.cn/",
+          "booking_url": "https://mp.weixin.qq.com/s/juzizhou-ticket",
+          "booking_status": "not_applicable",
+          "notice_url": "https://www.juzizhou.gov.cn/",
+          "checked_at": "2026-09-28"
+        },
+        "operations": {
+          "applicable_date": "2026-10-03",
+          "opening_hours": "07:00-22:00",
+          "last_entry": "21:30",
+          "temporary_notice": "国庆长假需提前预约入园码，观光小火车建议线上购票",
+          "checked_at": "2026-09-28",
+          "source_ids": [
+            "source-amap"
+          ]
+        },
+        "entrance": {
+          "name": "地铁2号线橘子洲站2号口",
+          "reason": "出站直接步入景区核心区与小火车始发站，免走跨江大桥",
+          "exit": "地铁2号线橘子洲站",
+          "location_query": "橘子洲地铁站"
+        },
+        "activities": [
+          {
+            "name": "橘子洲观光小火车往返",
+            "fee_type": "paid_mandatory",
+            "price": "¥40",
+            "required": true
+          }
+        ],
+        "checkpoint_blueprint": [
+          {
+            "id": "cp-jzz-1",
+            "order": 1,
+            "name": "橘子洲地铁站乘观光小火车",
+            "time": "11:30",
+            "end_time": "12:15",
+            "kind": "entry",
+            "required": true,
+            "instruction": "出地铁2号线刷预约码，排队登上复古小火车直奔洲头"
+          },
+          {
+            "id": "cp-jzz-2",
+            "order": 2,
+            "name": "青年毛泽东艺术雕塑瞻仰与打卡",
+            "time": "12:15",
+            "end_time": "13:45",
+            "kind": "visit",
+            "required": true,
+            "instruction": "近距离瞻仰32米高伟人雕塑，拍摄青年志气与湘江合影"
+          },
+          {
+            "id": "cp-jzz-3",
+            "order": 3,
+            "name": "望江亭远眺与小火车返程",
+            "time": "13:45",
+            "end_time": "14:30",
+            "kind": "exit",
+            "required": true,
+            "instruction": "漫步至橘洲最南端望江亭，随后凭小火车手环乘车返回地铁站"
+          }
+        ],
+        "confidence": "high",
+        "action_links": [
+          {
+            "type": "official",
+            "label": "查看橘子洲官方公众号指南",
+            "provider": "岳麓山风景名胜区",
+            "url": "https://www.juzizhou.gov.cn/",
+            "checked_at": "2026-09-28"
+          }
+        ],
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "attraction-wulingyuan-top",
+        "name": "张家界武陵源国家森林公园（全景一日大环线）",
+        "area": "湖南省张家界市武陵源区",
+        "seasonal_highlights": [
+          "天子山云海石海",
+          "御笔峰水墨画卷",
+          "袁家界阿凡达乾坤柱",
+          "百龙天梯66秒直降",
+          "金鞭溪峡谷吸氧"
+        ],
+        "best_time": "全天",
+        "best_time_reason": "早乘天子山索道登顶避峰，午后百龙天梯下山，平地漫步金鞭溪，山顶山下一体化大闭环",
+        "visit_duration": "约 9 小时",
+        "official": {
+          "physical_address": "湖南省张家界市武陵源区吴家峪门票站",
+          "homepage_url": "https://www.zjjwly.gov.cn/",
+          "booking_url": "https://www.zjjwly.gov.cn/",
+          "booking_status": "verified",
+          "notice_url": "https://www.zjjwly.gov.cn/",
+          "checked_at": "2026-09-28"
+        },
+        "operations": {
+          "applicable_date": "2026-10-04",
+          "opening_hours": "07:00-18:00",
+          "last_entry": "16:00",
+          "temporary_notice": "持二代身份证分时段刷脸/刷证入园，门票4天有效含全部环保车",
+          "checked_at": "2026-09-28",
+          "source_ids": [
+            "source-amap"
+          ]
+        },
+        "entrance": {
+          "name": "吴家峪门票站（东门标志门）",
+          "reason": "距离天鹅之旅国际青年旅舍步行仅380米，抢首批进园最方便",
+          "exit": "吴家峪门票站（东门标志门）",
+          "location_query": "吴家峪门票站"
+        },
+        "activities": [
+          {
+            "name": "武陵源核心景区4天联票（含环保大巴）",
+            "fee_type": "paid_mandatory",
+            "price": "¥225",
+            "required": true
+          },
+          {
+            "name": "天子山索道单程上行",
+            "fee_type": "paid_optional",
+            "price": "¥72",
+            "required": true
+          },
+          {
+            "name": "百龙天梯单程下行",
+            "fee_type": "paid_optional",
+            "price": "¥65",
+            "required": true
+          }
+        ],
+        "checkpoint_blueprint": [
+          {
+            "id": "cp-wly-1",
+            "order": 1,
+            "name": "东门标志门乘环保车赴天子山索道",
+            "time": "07:30",
+            "end_time": "08:30",
+            "kind": "entry",
+            "required": true,
+            "instruction": "从天鹅之旅青年旅舍步行5分钟进东门，乘首批环保车直达天子山索道下站"
+          },
+          {
+            "id": "cp-wly-2",
+            "order": 2,
+            "name": "天子山索道上山与贺龙公园御笔峰",
+            "time": "08:30",
+            "end_time": "11:00",
+            "kind": "visit",
+            "required": true,
+            "instruction": "乘索道破云直上天子山，观赏水墨御笔峰、仙女散花与石林仙境"
+          },
+          {
+            "id": "cp-wly-3",
+            "order": 3,
+            "name": "袁家界阿凡达悬浮山与天下第一桥",
+            "time": "11:00",
+            "end_time": "13:30",
+            "kind": "visit",
+            "required": true,
+            "instruction": "山顶乘环保车35分钟至袁家界，午间便餐后打卡乾坤柱（阿凡达原型山）与迷魂台"
+          },
+          {
+            "id": "cp-wly-4",
+            "order": 4,
+            "name": "百龙天梯66秒直降水绕四门",
+            "time": "13:30",
+            "end_time": "14:30",
+            "kind": "visit",
+            "required": true,
+            "instruction": "乘世界最高户外电梯垂直直降326米直达山脚水绕四门"
+          },
+          {
+            "id": "cp-wly-5",
+            "order": 5,
+            "name": "金鞭溪水绕四门至千里相会精华段平缓吸氧",
+            "time": "14:30",
+            "end_time": "16:30",
+            "kind": "visit",
+            "required": true,
+            "instruction": "下电梯直接步入金鞭溪，沿平缓石板溪道漫步骆驼峰、水帘瀑布至千里相会，享受高浓度负氧离子，随后原路或乘环保车折返"
+          },
+          {
+            "id": "cp-wly-6",
+            "order": 6,
+            "name": "乘环保车出标志门东门取行李",
+            "time": "16:30",
+            "end_time": "17:00",
+            "kind": "exit",
+            "required": true,
+            "instruction": "乘环保车返回东门标志门，回天鹅之旅青年旅舍取行李准备赴市区"
+          }
+        ],
+        "confidence": "high",
+        "action_links": [
+          {
+            "type": "official",
+            "label": "查看张家界武陵源官方票务",
+            "provider": "武陵源官方",
+            "url": "https://www.zjjwly.gov.cn/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "门票含景区内全部环保大巴车费"
+          }
+        ],
+        "source_ids": [
+          "source-amap"
+        ]
+      },
+      {
+        "id": "attraction-tianmenshan",
+        "name": "张家界天门山国家森林公园",
+        "area": "湖南省张家界市永定区大庸路天门山索道下站",
+        "seasonal_highlights": [
+          "7455米高空索道",
+          "悬崖玻璃栈道",
+          "鬼谷栈道",
+          "通天大道",
+          "天然穿山溶洞天门洞"
+        ],
+        "best_time": "清晨早场次",
+        "best_time_reason": "避免高峰排队，晨间山顶多云雾，初晴天门云海大爆发",
+        "visit_duration": "约 7 小时",
+        "official": {
+          "physical_address": "湖南省张家界市永定区大庸路天门山索道下站",
+          "homepage_url": "https://www.tianmenshan.com.cn/",
+          "booking_url": "https://www.tianmenshan.com.cn/",
+          "booking_status": "verified",
+          "notice_url": "https://www.tianmenshan.com.cn/",
+          "checked_at": "2026-09-28"
+        },
+        "operations": {
+          "applicable_date": "2026-10-05",
+          "opening_hours": "06:30-18:00",
+          "last_entry": "15:30",
+          "temporary_notice": "严格按预约时段（A线/B线）刷身份证检票进索道站",
+          "checked_at": "2026-09-28",
+          "source_ids": [
+            "source-amap"
+          ]
+        },
+        "entrance": {
+          "name": "天门山索道下站（市区大庸路）",
+          "reason": "距离指南针客栈步行仅450米，早晨抢首批进索道站最省力",
+          "exit": "天门山索道下站（乘快线索道+摆渡车返回）",
+          "location_query": "天门山索道下站"
+        },
+        "activities": [
+          {
+            "name": "天门山双程套票（A线或B线：索道上+快线索道下）",
+            "fee_type": "paid_mandatory",
+            "price": "¥278",
+            "required": true
+          },
+          {
+            "name": "玻璃栈道鞋套",
+            "fee_type": "paid_optional",
+            "price": "¥5",
+            "required": false
+          }
+        ],
+        "checkpoint_blueprint": [
+          {
+            "id": "cp-tms-1",
+            "order": 1,
+            "name": "市区索道下站检票上缆车",
+            "time": "07:30",
+            "end_time": "08:30",
+            "kind": "entry",
+            "required": true,
+            "instruction": "凭身份证通过预约闸机，乘高空索道直升山顶（或B线快线索道上）"
+          },
+          {
+            "id": "cp-tms-2",
+            "order": 2,
+            "name": "山顶西线绝壁栈道与玻璃栈道",
+            "time": "08:30",
+            "end_time": "11:45",
+            "kind": "visit",
+            "required": true,
+            "instruction": "经凌霄台踏上西线悬崖玻璃栈道，环绕鬼谷栈道与悬索桥至天门山寺"
+          },
+          {
+            "id": "cp-tms-3",
+            "order": 3,
+            "name": "穿山自动扶梯下至天门洞后方",
+            "time": "12:45",
+            "end_time": "13:30",
+            "kind": "visit",
+            "required": true,
+            "instruction": "乘坐7级穿山自动扶梯垂直穿透山体，抵达开阔的天门洞广场"
+          },
+          {
+            "id": "cp-tms-4",
+            "order": 4,
+            "name": "天门洞瞻仰与999级上天梯",
+            "time": "13:30",
+            "end_time": "14:30",
+            "kind": "visit",
+            "required": true,
+            "instruction": "近距离观赏世界最高海拔天然穿山溶洞，沿999级天梯步道漫步而下"
+          },
+          {
+            "id": "cp-tms-5",
+            "order": 5,
+            "name": "快线索道下山并乘景区摆渡车回市区",
+            "time": "14:30",
+            "end_time": "15:30",
+            "kind": "exit",
+            "required": true,
+            "instruction": "乘快线索道至山门，乘摆渡车顺畅返回市区索道下站"
+          }
+        ],
+        "confidence": "high",
+        "action_links": [
+          {
+            "type": "official",
+            "label": "查看天门山国家森林公园官方预订",
+            "provider": "天门山官方",
+            "url": "https://www.tianmenshan.com.cn/",
+            "checked_at": "2026-09-28",
+            "disclaimer": "若A线售罄首选B线，景观完全一致"
+          }
+        ],
+        "source_ids": [
+          "source-amap"
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "date": "2026-10-03",
+      "label": "D1：杭城启程 · 橘洲湘江 · 晚抵武陵源",
+      "weather": "🌦️ 10.03 逐小时走势：08:00 (16.2°C) ➔ 11:00 (17.4°C 毛毛雨) ➔ 14:00 (18.4°C 细雨) ➔ 17:00 (17.3°C 微雨) ➔ 20:00 (17.3°C 阴转多云) · 橘洲小火车遮雨，夜间列车平稳，夜宿武陵源干爽清凉",
+      "meal_exemptions": {
+        "午餐": true
+      },
+      "events": [
+        {
+          "id": "e-d1-train1",
+          "time": "07:47",
+          "end_time": "11:00",
+          "type": "transport",
+          "title": "高铁 G205：杭州东站 → 长沙南站",
+          "subtitle": "复兴号高速列车",
+          "route_id": "train-hgh-cwq-g205",
+          "cost": "二等座 ¥485",
+          "details": [
+            "早晨 07:15 前抵达杭州东站安检进站，07:47 准时发车",
+            "途经金华、南昌西等站，车上备有充电插座，中途无需换乘，11:00 准点抵达长沙南站"
+          ],
+          "tips": [
+            "国庆首日上午出发，车厢内恒温空调舒适，建议穿长袖或备薄外套"
+          ]
+        },
+        {
+          "id": "e-d1-transit1",
+          "time": "11:00",
+          "end_time": "11:30",
+          "type": "transport",
+          "title": "地铁 2 号线转场至橘子洲",
+          "subtitle": "长沙南站 → 橘子洲站",
+          "route_id": "edge-cs-station-jzz",
+          "cost": "地铁票 ¥4",
+          "details": [
+            "长沙南站出站后直接下到地下一层，搭乘地铁 2 号线（往梅溪湖西方向）",
+            "途径12站直达橘子洲站，出2号口即达景区核心入口"
+          ],
+          "tips": [
+            "可直接使用支付宝或微信乘车码扫码过闸，行李寄存于长沙站或随身轻装"
+          ]
+        },
+        {
+          "id": "e-d1-attraction1",
+          "time": "11:30",
+          "end_time": "14:30",
+          "type": "attraction",
+          "title": "橘子洲景区瞻仰与湘江漫步",
+          "subtitle": "青年毛泽东艺术雕塑 · 望江亭",
+          "attraction_id": "attraction-juzizhou",
+          "weather_id": "wx-d1",
+          "cost": "小火车往返 ¥40",
+          "cost_items": [
+            {
+              "name": "橘子洲大门票",
+              "kind": "base_ticket",
+              "unit_price": "免费",
+              "quantity": "1人",
+              "subtotal": "0元",
+              "pricing_role": "baseline",
+              "required": true,
+              "status": "free",
+              "source_ids": [
+                "source-amap"
+              ]
+            }
+          ],
+          "admission": {
+            "opening_hours": "07:00-22:00",
+            "last_entry": "21:30",
+            "reservation_method": "微信搜索‘岳麓山 橘子洲旅游区’提前预约入园码",
+            "entry_requirement": "扫预约码或刷身份证免费入园",
+            "notice": "国庆长假现场人流密集，建议抵站前完成实名预约"
+          },
+          "execution": {
+            "entry": {
+              "name": "地铁2号线橘子洲站2号口",
+              "location_query": "橘子洲地铁站",
+              "reason": "出站直接步入小火车始发站，免除跨江大桥步行拥堵"
+            },
+            "exit": {
+              "name": "地铁2号线橘子洲站",
+              "location_query": "橘子洲地铁站"
+            },
+            "checkpoints": [
+              {
+                "id": "cp-jzz-1",
+                "order": 1,
+                "name": "橘子洲地铁站乘观光小火车",
+                "time": "11:30",
+                "end_time": "12:15",
+                "kind": "entry",
+                "required": true,
+                "instruction": "出地铁2号线刷预约码，排队登上复古小火车直奔洲头"
+              },
+              {
+                "id": "cp-jzz-2",
+                "order": 2,
+                "name": "青年毛泽东艺术雕塑瞻仰与打卡",
+                "time": "12:15",
+                "end_time": "13:45",
+                "kind": "visit",
+                "required": true,
+                "instruction": "近距离瞻仰32米高伟人雕塑，拍摄青年志气与湘江合影"
+              },
+              {
+                "id": "cp-jzz-3",
+                "order": 3,
+                "name": "望江亭远眺与小火车返程",
+                "time": "13:45",
+                "end_time": "14:30",
+                "kind": "exit",
+                "required": true,
+                "instruction": "漫步至橘洲最南端望江亭，随后凭小火车手环乘车返回地铁站"
+              }
+            ]
+          },
+          "reservation_required": false,
+          "details": [
+            "乘复古观光小火车沿江前行，两岸湘江江水波光粼粼",
+            "在巨型青年毛泽东石雕前伫立留影，感受‘问苍茫大地，谁主沉浮’的豪迈气魄",
+            "沿望江亭木栈道散步，吹江风洗去旅途疲乏，中午在小火车终点站享用自备点心或简餐"
+          ],
+          "tips": [
+            "小火车车票需保留好纸质手环，中途各站均可凭手环上下车"
+          ]
+        },
+        {
+          "id": "e-d1-transit2",
+          "time": "14:30",
+          "end_time": "14:45",
+          "type": "transport",
+          "title": "地铁 2 号线过江至太平老街",
+          "subtitle": "橘子洲站 → 湘江中路站",
+          "route_id": "edge-jzz-taiping",
+          "cost": "地铁票 ¥2",
+          "details": [
+            "从橘子洲站乘地铁 2 号线仅需 1 站（3分钟车程）即可横穿湘江",
+            "在湘江中路站或五一广场站出站，步行进入太平历史文化街区"
+          ],
+          "tips": []
+        },
+        {
+          "id": "e-d1-walk-taiping",
+          "time": "14:45",
+          "end_time": "17:00",
+          "type": "experience",
+          "title": "太平老街与坡子街市井探秘",
+          "subtitle": "青石板路 · 茶颜悦色 · 贾谊故居",
+          "details": [
+            "漫步青石板铺就的太平老街，穿梭于清末民初封火墙老建筑之间",
+            "参观西汉名臣贾谊故居（太傅祠），感受千年历史文脉",
+            "在街巷内打卡一杯地道茶颜悦色（幽兰拿铁），品尝现炸黑色经典臭豆腐（人均约 ¥35）"
+          ],
+          "tips": [
+            "假期老街人潮涌动，注意看管好随身贵重物品"
+          ]
+        },
+        {
+          "id": "e-d1-meal1",
+          "time": "17:00",
+          "end_time": "18:15",
+          "type": "meal",
+          "meal_id": "meal-d1-dinner",
+          "title": "笨萝卜浏阳菜馆五一商圈特色晚餐",
+          "subtitle": "地道浏阳蒸菜 · 开启舌尖湖南",
+          "cost": "人均约 ¥60",
+          "details": [
+            "选择位于五一广场南侧的笨萝卜浏阳菜馆享用早晚市",
+            "必点招牌：醋蒸鸡、酸菜炒肥肠、油渣炒青椒，配热气腾腾米饭，极其开胃过瘾"
+          ],
+          "tips": [
+            "17:00为晚市翻台早高峰，早点进店基本无需漫长等位；如排队超过20分钟则切换至费大厨在线叫号"
+          ]
+        },
+        {
+          "id": "e-d1-transit3",
+          "time": "18:15",
+          "end_time": "18:35",
+          "type": "transport",
+          "title": "地铁 2 号线赶往长沙站",
+          "subtitle": "五一广场站 → 长沙火车站",
+          "route_id": "edge-taiping-cs-station",
+          "cost": "地铁票 ¥3",
+          "details": [
+            "餐毕步行至五一广场站乘地铁 2 号线（往光达方向），乘坐 4 站直达长沙火车站",
+            "出站通过换乘通道直接进入城际高铁候车大厅"
+          ],
+          "tips": [
+            "请留足30分钟安检及候车时间"
+          ]
+        },
+        {
+          "id": "e-d1-train2",
+          "time": "19:00",
+          "end_time": "20:50",
+          "type": "transport",
+          "title": "城际高铁：长沙站 → 张家界西站",
+          "subtitle": "G4166 / C72 城际列车",
+          "route_id": "train-cs-jxa-g4166",
+          "cost": "二等座 ¥166",
+          "details": [
+            "搭乘长张城际高铁，车程仅 1 小时 50 分",
+            "列车飞速穿过湘中平原驶入湘西武陵山脉腹地，于 20:50 准点抵达张家界西站"
+          ],
+          "tips": [
+            "列车平稳，可在车上小憩恢复体能"
+          ]
+        },
+        {
+          "id": "e-d1-transit4",
+          "time": "20:50",
+          "end_time": "21:30",
+          "type": "transport",
+          "title": "张家界西站公路转场至天鹅之旅青年旅舍",
+          "subtitle": "西站客运专线直达大巴或正规出租车",
+          "route_id": "edge-zjj-west-wly",
+          "cost": "专线票 ¥13",
+          "details": [
+            "出高铁站右转即达西站客运分流中心，乘坐武陵源客运专线直达大巴（约35分钟车程）至吴家峪客运站，步行3分钟抵达天鹅之旅青年旅舍",
+            "直抵武陵源军邸路天鹅之旅国际青年旅舍，办理入住"
+          ],
+          "tips": [
+            "专线大巴流水发车，末班车保障所有抵站高铁乘客"
+          ]
+        },
+        {
+          "id": "e-d1-lodging1",
+          "time": "21:30",
+          "end_time": "22:00",
+          "type": "lodging",
+          "title": "入住天鹅之旅国际青年旅舍并安心休息",
+          "subtitle": "标志门旁高分国际青旅 · 独卫大床房",
+          "lodging_id": "hotel-wly-tianezhilv",
+          "cost": "大床房约 ¥180/晚",
+          "details": [
+            "前台办理入住独立卫浴舒适大床房，前台掌柜提供手绘徒步避坑路线图与登山建议",
+            "冲凉热水澡，调好次日 06:45 闹钟，早早休息为次日武陵源全景一日大环线蓄积充沛体能"
+          ],
+          "tips": [
+            "青旅提供独立卫浴、冷暖空调与充沛热水，房间干爽舒适，周边吃早点极方便"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "label": "D2：武陵源一日全景大通关 · 奇峰吸氧 · 傍晚赴市区",
+      "weather": "⛅ 10.04 武陵源逐小时走势：08:00 (16.8°C) ➔ 10:00 (17.9°C) ➔ 12:00 (19.2°C) ➔ 14:00 (20.0°C) ➔ 17:00 (19.5°C) · 全天 0.0mm 绝无降水！干爽阴天，高能见度，峰林神韵一览无余，登山无滑倒风险",
+      "meal_exemptions": {
+        "午餐": true
+      },
+      "events": [
+        {
+          "id": "e-d2-morning",
+          "time": "07:00",
+          "end_time": "07:30",
+          "type": "experience",
+          "title": "晨起退房寄存行李并享用热米粉",
+          "subtitle": "常德牛肉炖粉 · 补充登山能量",
+          "details": [
+            "退房并将随身大件行李免费寄存在天鹅之旅青年旅舍前台",
+            "酒店出门吴家峪街巷品尝一碗热腾腾的常德牛肉炖粉加荷包蛋（¥15），暖胃驱寒"
+          ],
+          "tips": [
+            "务必穿好防风保暖冲锋衣与防滑鞋套，随身携带轻便背包与少量高能零食"
+          ]
+        },
+        {
+          "id": "e-d2-attraction",
+          "time": "07:30",
+          "end_time": "17:00",
+          "type": "attraction",
+          "title": "武陵源核心探索：一日全景大环线",
+          "subtitle": "天子山索道 ➔ 贺龙公园 ➔ 袁家界阿凡达 ➔ 百龙天梯 ➔ 金鞭溪精华段",
+          "attraction_id": "attraction-wulingyuan-top",
+          "weather_id": "wx-d2",
+          "cost": "大门票¥225 + 索道¥72 + 天梯¥65",
+          "cost_items": [
+            {
+              "name": "武陵源核心景区4天联票（含环保大巴）",
+              "kind": "base_ticket",
+              "unit_price": "¥225",
+              "quantity": "1人",
+              "subtotal": "225元",
+              "pricing_role": "baseline",
+              "required": true,
+              "status": "verified",
+              "source_ids": [
+                "source-amap"
+              ]
+            }
+          ],
+          "admission": {
+            "opening_hours": "07:00-18:00",
+            "last_entry": "16:00",
+            "reservation_method": "通过官方公众号‘张家界一机游’实名预约分时段电子门票",
+            "entry_requirement": "持二代身份证原件刷证/刷脸过闸入园",
+            "notice": "门票含景区内全部环保大巴车费，天子山索道与百龙天梯按需单独购票"
+          },
+          "execution": {
+            "entry": {
+              "name": "吴家峪门票站（东门标志门）",
+              "location_query": "吴家峪门票站",
+              "reason": "距离天鹅之旅国际青年旅舍步行仅380米，抢首批进园最方便"
+            },
+            "exit": {
+              "name": "吴家峪门票站（东门标志门）",
+              "location_query": "吴家峪门票站"
+            },
+            "checkpoints": [
+              {
+                "id": "cp-wly-1",
+                "order": 1,
+                "name": "东门标志门乘环保车赴天子山索道",
+                "time": "07:30",
+                "end_time": "08:30",
+                "kind": "entry",
+                "required": true,
+                "instruction": "从天鹅之旅青年旅舍步行5分钟进东门，乘首批环保车直达天子山索道下站"
+              },
+              {
+                "id": "cp-wly-2",
+                "order": 2,
+                "name": "天子山索道上山与贺龙公园御笔峰",
+                "time": "08:30",
+                "end_time": "11:00",
+                "kind": "visit",
+                "required": true,
+                "instruction": "乘索道破云直上天子山，观赏水墨御笔峰、仙女散花与石林仙境"
+              },
+              {
+                "id": "cp-wly-3",
+                "order": 3,
+                "name": "袁家界阿凡达悬浮山与天下第一桥",
+                "time": "11:00",
+                "end_time": "13:30",
+                "kind": "visit",
+                "required": true,
+                "instruction": "山顶乘环保车35分钟至袁家界，午间便餐后打卡乾坤柱（阿凡达原型山）与迷魂台"
+              },
+              {
+                "id": "cp-wly-4",
+                "order": 4,
+                "name": "百龙天梯66秒直降水绕四门",
+                "time": "13:30",
+                "end_time": "14:30",
+                "kind": "visit",
+                "required": true,
+                "instruction": "乘世界最高户外电梯垂直直降326米直达山脚水绕四门"
+              },
+              {
+                "id": "cp-wly-5",
+                "order": 5,
+                "name": "金鞭溪水绕四门至千里相会精华段平缓吸氧",
+                "time": "14:30",
+                "end_time": "16:30",
+                "kind": "visit",
+                "required": true,
+                "instruction": "下电梯直接步入金鞭溪，沿平缓石板溪道漫步骆驼峰、水帘瀑布至千里相会，享受高浓度负氧离子，随后原路或乘环保车折返"
+              },
+              {
+                "id": "cp-wly-6",
+                "order": 6,
+                "name": "乘环保车出标志门东门取行李",
+                "time": "16:30",
+                "end_time": "17:00",
+                "kind": "exit",
+                "required": true,
+                "instruction": "乘环保车返回东门标志门，回天鹅之旅青年旅舍取行李准备赴市区"
+              }
+            ]
+          },
+          "reservation_required": false,
+          "details": [
+            "早晨抢首波索道上山，上午天子山浓雾缭绕，宛如水墨中国画，石峰若隐若现极其奇幻",
+            "午间在袁家界欣赏300米高拔地而起的阿凡达哈利路亚悬浮山‘乾坤柱’，领略造化神工",
+            "乘坐百龙天梯下山，66秒穿透山岩垂直直降326米，视野极其震撼",
+            "出梯即入金鞭溪下游精华段，沿溪平缓慢行3.5公里吸氧洗肺，水声潺潺毫无疲劳感"
+          ],
+          "tips": [
+            "山顶午餐建议在天子山或袁家界服务区便餐；百龙天梯排队时尽量靠前选玻璃窗前视野"
+          ]
+        },
+        {
+          "id": "e-d2-pickup-transfer",
+          "time": "17:00",
+          "end_time": "18:00",
+          "type": "transport",
+          "title": "天鹅之旅青年旅舍取行李并专线大巴赴市区",
+          "subtitle": "武陵源东门 → 张家界指南针客栈",
+          "route_id": "edge-wly-zjj-city",
+          "cost": "专线班车 ¥12",
+          "details": [
+            "回天鹅之旅青年旅舍取回寄存的行李，步行前往客运站搭乘直达市区的专线班车（车程约45分钟）",
+            "直抵天门山索道下站附近，步行仅450米进驻指南针客栈"
+          ],
+          "tips": [
+            "班车流水发车，班次密集，免除换乘麻烦"
+          ]
+        },
+        {
+          "id": "e-d2-checkin-city",
+          "time": "18:00",
+          "end_time": "18:30",
+          "type": "lodging",
+          "title": "入住张家界指南针客栈(天门山索道店)",
+          "subtitle": "索道站旁高口碑客栈 · 步行6分钟直达索道",
+          "lodging_id": "hotel-zjj-zhinanzhen",
+          "cost": "大床房约 ¥200/晚",
+          "details": [
+            "前台办理入住独立卫浴温馨大床房，放平双腿稍事休整",
+            "客栈老板热情介绍次日天门山索道早进站技巧与防排队攻略"
+          ],
+          "tips": [
+            "客栈距离索道下站步行仅6分钟，次日清晨免起大早赶车"
+          ]
+        },
+        {
+          "id": "e-d2-dinner",
+          "time": "18:30",
+          "end_time": "20:00",
+          "type": "meal",
+          "meal_id": "meal-d2-dinner",
+          "title": "富正毅三下锅老字号干锅晚宴",
+          "subtitle": "地道核桃肉牛肚双拼 · 补充登山能量",
+          "cost": "人均约 ¥70",
+          "details": [
+            "步行4分钟至富正毅三下锅（索道公司总店）享用正宗湘西干锅",
+            "招牌核桃肉+脆牛肚双拼干锅，配酸萝卜炒肉与黄金豆腐，香辣浓郁超级下饭"
+          ],
+          "tips": [
+            "18:30前后客人渐多，随到随点，上菜极快"
+          ]
+        },
+        {
+          "id": "e-d2-night",
+          "time": "20:00",
+          "end_time": "21:30",
+          "type": "experience",
+          "title": "索道广场踩点与早早入眠",
+          "subtitle": "夜色清爽 · 提前踩准次日清晨索道闸机入口",
+          "details": [
+            "餐毕散步至天门山索道下站广场，夜风清爽干爽（18.5°C），提前踩准次日早晨实名检票通道",
+            "回客栈热水泡脚彻底放松小腿肌肉，早早入眠为次日天门山蓄力"
+          ],
+          "tips": [
+            "定好次日清晨 06:45 闹钟，保证充足睡眠"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "label": "D3：天门山高空索道 · 绝壁玻璃栈道 · 天门大云海",
+      "weather": "⛅ 10.05 逐小时走势：08:00 (16.8°C) ➔ 10:00 (17.9°C) ➔ 12:00 (19.2°C) ➔ 14:00 (20.0°C) ➔ 17:00 (19.5°C) ➔ 20:00 (18.5°C) · 全天降水0.0mm！前日降雨沉淀大量水汽，天门山晨间与午后能见度高，绝佳登高期",
+      "meal_exemptions": {
+        "午餐": true
+      },
+      "events": [
+        {
+          "id": "e-d3-morning",
+          "time": "07:00",
+          "end_time": "07:30",
+          "type": "experience",
+          "title": "晨起步行至索道下站",
+          "subtitle": "步行6分钟直达 · 免早起奔波",
+          "details": [
+            "指南针客栈起床洗漱，轻装出行（行李留客栈房间连住无需收拾）",
+            "客栈出门右手边买两个热腾腾的包子豆浆（¥8），步行450米直抵天门山索道下站广场"
+          ],
+          "tips": [
+            "清晨气温约16.8°C微凉，穿长袖防风外套"
+          ]
+        },
+        {
+          "id": "e-d3-attraction",
+          "time": "07:30",
+          "end_time": "15:30",
+          "type": "attraction",
+          "title": "天门山国家森林公园：高空绝壁全景挑战",
+          "subtitle": "高空大索道 ➔ 西线悬崖玻璃栈道 ➔ 穿山自动扶梯 ➔ 天门洞 ➔ 999级天梯",
+          "attraction_id": "attraction-tianmenshan",
+          "weather_id": "wx-d3",
+          "cost": "双程索道门票¥278 + 鞋套¥5",
+          "cost_items": [
+            {
+              "name": "天门山双程套票（A线或B线：索道上+快线索道下）",
+              "kind": "base_ticket",
+              "unit_price": "¥278",
+              "quantity": "1人",
+              "subtotal": "278元",
+              "pricing_role": "baseline",
+              "required": true,
+              "status": "verified",
+              "source_ids": [
+                "source-amap"
+              ]
+            }
+          ],
+          "admission": {
+            "opening_hours": "06:30-18:00",
+            "last_entry": "15:30",
+            "reservation_method": "通过‘张家界一机游’或携程提前预订分时段门票（A线或B线）",
+            "entry_requirement": "持本人二代身份证原件刷证过闸上缆车",
+            "notice": "国庆期间严格按票面预约时间段排队进站"
+          },
+          "execution": {
+            "entry": {
+              "name": "天门山索道下站（市区大庸路）",
+              "location_query": "天门山索道下站",
+              "reason": "距离指南针客栈步行仅450米，早晨抢首批进索道站最省力"
+            },
+            "exit": {
+              "name": "天门山索道下站（乘快线索道+摆渡车返回）",
+              "location_query": "天门山索道下站"
+            },
+            "checkpoints": [
+              {
+                "id": "cp-tms-1",
+                "order": 1,
+                "name": "市区索道下站检票上缆车",
+                "time": "07:30",
+                "end_time": "08:30",
+                "kind": "entry",
+                "required": true,
+                "instruction": "凭身份证通过预约闸机，乘高空索道直升山顶（或B线快线索道上）"
+              },
+              {
+                "id": "cp-tms-2",
+                "order": 2,
+                "name": "山顶西线绝壁栈道与玻璃栈道",
+                "time": "08:30",
+                "end_time": "11:45",
+                "kind": "visit",
+                "required": true,
+                "instruction": "经凌霄台踏上西线悬崖玻璃栈道，环绕鬼谷栈道与悬索桥至天门山寺"
+              },
+              {
+                "id": "cp-tms-3",
+                "order": 3,
+                "name": "穿山自动扶梯下至天门洞后方",
+                "time": "12:45",
+                "end_time": "13:30",
+                "kind": "visit",
+                "required": true,
+                "instruction": "乘坐7级穿山自动扶梯垂直穿透山体，抵达开阔的天门洞广场"
+              },
+              {
+                "id": "cp-tms-4",
+                "order": 4,
+                "name": "天门洞瞻仰与999级上天梯",
+                "time": "13:30",
+                "end_time": "14:30",
+                "kind": "visit",
+                "required": true,
+                "instruction": "近距离观赏世界最高海拔天然穿山溶洞，沿999级天梯步道漫步而下"
+              },
+              {
+                "id": "cp-tms-5",
+                "order": 5,
+                "name": "快线索道下山并乘景区摆渡车回市区",
+                "time": "14:30",
+                "end_time": "15:30",
+                "kind": "exit",
+                "required": true,
+                "instruction": "乘快线索道至山门，乘摆渡车顺畅返回市区索道下站"
+              }
+            ]
+          },
+          "reservation_required": false,
+          "details": [
+            "搭乘7455米世界最长高空客运索道直升天门山顶，28分钟穿透浩瀚云海，俯瞰99道弯通天大道",
+            "踏上悬崖玻璃栈道（需穿鞋套¥5），悬空千仞绝壁之上，白云在脚底翻滚，视觉极度震撼",
+            "沿鬼谷栈道漫步至天门山寺，午间在樱桃湾服务区简单补给",
+            "搭乘7级穿山自动扶梯下穿山体直达天门洞，瞻仰世界最高天然穿山溶洞，沿999级天梯步道踏步而下"
+          ],
+          "tips": [
+            "若A线紧张，预约B线风景与体验完全一致；恐高者玻璃栈道可沿内侧岩壁通行"
+          ]
+        },
+        {
+          "id": "e-d3-relax",
+          "time": "15:30",
+          "end_time": "17:30",
+          "type": "experience",
+          "title": "回指南针客栈冲凉休整彻底放松",
+          "subtitle": "步行6分钟即达 · 充足时间休息舒缓双腿",
+          "details": [
+            "出索道站步行仅6分钟轻松走回指南针客栈",
+            "洗热水澡换下登山衣物，卧床休息放松双腿，彻底消除两日登山疲劳"
+          ],
+          "tips": [
+            "客栈距离索道站极近，无需在景区外长久站立候车"
+          ]
+        },
+        {
+          "id": "e-d3-dinner",
+          "time": "17:30",
+          "end_time": "19:00",
+          "type": "meal",
+          "meal_id": "meal-d3-dinner",
+          "title": "寨子里的钵钵菜特色晚餐",
+          "subtitle": "湘西高山小火钵 · 滋补土鸡汤暖身",
+          "cost": "人均约 ¥65",
+          "details": [
+            "步行2分钟至南城金座的寨子里的钵钵菜（天门山索道店）",
+            "必点招牌滋补土鸡钵、熬缸排骨黄豆、土家腊肉炖钵，小火慢煨热气腾腾，鲜香无比"
+          ],
+          "tips": [
+            "17:30早晚市无需排队，土鸡钵汤汁拌饭绝佳"
+          ]
+        },
+        {
+          "id": "e-d3-lodging3",
+          "time": "19:00",
+          "end_time": "22:00",
+          "type": "lodging",
+          "title": "指南针客栈连住第二晚 · 舒适安眠",
+          "subtitle": "无需搬动行李 · 彻底放松休养",
+          "lodging_id": "hotel-zjj-zhinanzhen",
+          "cost": "已含在连住中",
+          "details": [
+            "餐毕回房，整理两天在武陵源与天门山拍下的精彩震撼大片",
+            "次日无需早起，开心地睡到自然醒，安心补眠"
+          ],
+          "tips": [
+            "客栈房间隔音好，空调温度适宜"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "label": "D4：睡到自然醒 · 市区采买特产 · 直达复兴号返杭",
+      "weather": "☀️ 10.06 逐小时走势：07:00 (11.0°C) ➔ 10:00 (13.3°C) ➔ 14:00 (16.9°C 阳光晴朗) ➔ 14:39 乘G221(车内恒温) ➔ 21:09 抵杭东站(20.3°C 清爽) · 全天降水0.0mm，秋高气爽晴朗，返杭列车平稳准点",
+      "meal_exemptions": {
+        "午餐": true,
+        "晚餐": true
+      },
+      "events": [
+        {
+          "id": "e-d4-morning",
+          "time": "08:30",
+          "end_time": "10:00",
+          "type": "experience",
+          "title": "睡到自然醒与大庸路品尝地道早点",
+          "subtitle": "张家界正宗肉丝牛肉粉 · 慢调享受清晨",
+          "details": [
+            "睡到自然醒，从容起床洗漱收拾行李",
+            "步行至大庸路街巷老字号粉店，品尝一碗地道张家界土沙锅米粉或猪脚面（¥15），汤鲜味浓"
+          ],
+          "tips": [
+            "指南针客栈支持12:00前退房，上午行李可留在房间或前台"
+          ]
+        },
+        {
+          "id": "e-d4-shopping",
+          "time": "10:00",
+          "end_time": "11:30",
+          "type": "experience",
+          "title": "市区特产采买：正宗高山莓茶与纯葛根粉",
+          "subtitle": "张家界地道风物 · 馈赠亲友佳品",
+          "details": [
+            "前往大庸路正规土特产直营店，选购正宗张家界特产：高山土家莓茶（富含天然黄酮，回甘清甜）、野生纯葛根粉与湘西腊肉",
+            "人均消费丰俭由人（预算约 ¥150），店员可提供真空打包"
+          ],
+          "tips": [
+            "建议在正规明码标价商超采买，避免流动摊贩以次充好"
+          ]
+        },
+        {
+          "id": "e-d4-lunch",
+          "time": "11:30",
+          "end_time": "12:45",
+          "type": "experience",
+          "title": "市区悠闲午餐便餐",
+          "subtitle": "尝一口老张家界特色小炒",
+          "details": [
+            "索道站周边品尝特色土家腊肉炒青椒、酸酢鱼或家常小炒，从容午休"
+          ],
+          "tips": []
+        },
+        {
+          "id": "e-d4-checkout-transfer",
+          "time": "12:45",
+          "end_time": "13:45",
+          "type": "transport",
+          "title": "客栈退房取行李打车前往张家界西站",
+          "subtitle": "车程约20分钟 · 避开返程高峰",
+          "route_id": "edge-zjj-city-west",
+          "cost": "打车约 ¥30",
+          "details": [
+            "指南针客栈办理退房并取好全部行李，门口直接打车前往张家界西站（路程约12公里，车程约20分钟）",
+            "留足1小时进站安检与候车时间，从容应对国庆返程"
+          ],
+          "tips": []
+        },
+        {
+          "id": "e-d4-station-wait",
+          "time": "13:45",
+          "end_time": "14:39",
+          "type": "experience",
+          "title": "张家界西站安检进站与从容候车",
+          "subtitle": "恒温候车大厅 · 补足饮用水",
+          "details": [
+            "刷二代身份证原件通过实名核验与安检，进入张家界西站宽敞的二楼候车大厅",
+            "保温杯装满温水，检票口旁从容候车"
+          ],
+          "tips": [
+            "提前准备好有效身份证件，听从站内广播准时检票"
+          ]
+        },
+        {
+          "id": "e-d4-train-return",
+          "time": "14:39",
+          "end_time": "21:09",
+          "type": "transport",
+          "title": "直达复兴号：张家界西站 → 杭州东站",
+          "subtitle": "G221 次直达列车 · 6.5小时免换乘直抵杭城",
+          "route_id": "train-jxa-hgh-g221",
+          "cost": "二等座 ¥771",
+          "details": [
+            "搭乘 G221 次复兴号直达高铁准点发车，一站直达杭州东站，中途无需折腾换乘",
+            "车上舒舒服服整理旅途海量照片与视频，晚间 21:09 准点抵达杭州东站",
+            "换乘杭州地铁轻松到家，10.06与10.07留足整整两天在家彻底休整，圆满收官！"
+          ],
+          "tips": [
+            "列车配备充电插座，车内提供餐食销售，晚间到站后可直接乘杭州地铁回家"
+          ]
+        }
+      ]
+    }
+  ]
+}
